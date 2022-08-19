@@ -5,7 +5,6 @@ import javax.validation.constraints.*;
 import java.util.Date;
 
 @Entity
-
 public class Empleados {
 
 

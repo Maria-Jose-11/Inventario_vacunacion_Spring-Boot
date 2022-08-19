@@ -21,4 +21,9 @@ public class UserService {
         return userRepository.save(usuario);
     }
 
+    public UserModel modificarUsuario(UserModel usuario){
+        return userRepository.save(usuario);
+    }
+
+
 }

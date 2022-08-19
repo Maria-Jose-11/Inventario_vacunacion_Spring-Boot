@@ -1,10 +1,9 @@
 package com.springboot.vacunacion.Models;
 
-
 import javax.persistence.*;
 import javax.validation.constraints.*;
-@Entity
 
+@Entity
 public class Administrador {
 
     //ID
