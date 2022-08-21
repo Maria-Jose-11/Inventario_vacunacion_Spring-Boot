@@ -43,7 +43,7 @@ public class UserModel implements Serializable {
     @NotNull(message = "Usuario requerido")
     private String usuario;
 
-    //NOMBRE
+    //PASSWORD
     @NotNull(message = "Contraseña requerida")
     private String password;
 
@@ -144,6 +144,21 @@ public class UserModel implements Serializable {
         this.password = password;
     }
 
+
+    @Override
+    public String toString() {
+        return "UserModel{" +
+                "id=" + id +
+                ", cedula='" + cedula + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", email='" + email + '\'' +
+                ", usuario='" + usuario + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    /*
     @Override
     public String toString() {
         return "UserModel{" +
@@ -163,6 +178,9 @@ public class UserModel implements Serializable {
                 ", roles=" + roles +
                 '}';
     }
+
+     */
+
 
     @Override
     public boolean equals(Object o) {

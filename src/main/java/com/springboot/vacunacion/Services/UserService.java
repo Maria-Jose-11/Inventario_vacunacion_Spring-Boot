@@ -21,8 +21,12 @@ public class UserService {
         return userRepository.save(usuario);
     }
 
-    public UserModel modificarUsuario(UserModel usuario){
-        return userRepository.save(usuario);
+    public void modificarUsuario(UserModel usuario){
+        userRepository.save(usuario);
+    }
+
+    public void eliminarUsuario(Long id){
+        userRepository.deleteById(id);
     }
 
 

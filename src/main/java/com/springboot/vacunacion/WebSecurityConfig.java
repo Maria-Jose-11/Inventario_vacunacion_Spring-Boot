@@ -1,4 +1,4 @@
-package com.springboot.vacunacion;
+/*package com.springboot.vacunacion;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,3 +14,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 }
+
+ */
