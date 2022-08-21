@@ -1,0 +1,87 @@
+
+<div class="container">
+    <div class="card-body">
+        <h5 class="card-title">{{titulo}}</h5>
+        <form>
+            <br>
+            <br>
+            <!-- cedula -->
+            <div class="form-group row">
+                <label for="cedula" class="col-form-label col-sm-2">Cédula: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="cedula" placeholder="Ingrese la cédula"  [(ngModel)]="usuario.cedula">
+                </div>
+            </div>
+            <br>
+            <!-- nombre -->
+            <div class="form-group row">
+                <label for="nombre" class="col-form-label col-sm-2">Nombre: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="nombre" placeholder="Ingrese el nombre" [(ngModel)]="usuario.nombre">
+                </div>
+            </div>
+            <br>
+            <!-- apellido -->
+            <div class="form-group row">
+                <label for="apellido" class="col-form-label col-sm-2">Apellido: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="apellido" placeholder="Ingrese el apellido" [(ngModel)]="usuario.apellido">
+                </div>
+            </div>
+            <br>
+            <!-- email -->
+            <div class="form-group row">
+                <label for="email" class="col-form-label col-sm-2">Email: </label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" name="email" placeholder="Ingrese el correo electrónico" [(ngModel)]="usuario.email">
+                </div>
+            </div>
+            <br>
+            <!-- usuario -->
+            <div class="form-group row">
+                <label for="usuario" class="col-form-label col-sm-2">Usuario: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="usuario" placeholder="Ingrese el ussuario" [(ngModel)]="usuario.usuario">
+                </div>
+            </div>
+            <br>
+            <!-- password -->
+            <div class="form-group row">
+                <label for="password" class="col-form-label col-sm-2">Contraseña: </label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" name="password" placeholder="Ingrese la contraseña"  [(ngModel)]="usuario.password">
+                </div>
+            </div>
+            <br>
+            <!-- confirmPassword -->
+            <!-- <div class="form-group row">
+                <label for="confirmPassword"class="col-form-label col-sm-2">Confirmar contraseña: </label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" name="confirmPassword" placeholder="Ingrese nuevamente la contraseña" [(ngModel)]="usuario.confirmPassword">
+                </div>
+            </div> -->
+            <br>
+            <br>
+            
+            <!-- DESCOMENTAR CUANDO YA SE ARREGLE EL UPDATE -->
+
+            <!-- <button class="btn btn-success" role="button" (click)="create()" *ngIf="!usuario.id else elseBlock" >Registrar</button>
+            &nbsp;
+            &nbsp;
+            <ng-template #elseBlock>
+                <button class="btn btn-success" role="button" (click)="update()" >Actualizar</button>
+            </ng-template> -->
+
+            <button class="btn btn-success" role="button" (click)="create()" *ngIf="!usuario.id" >Registrar</button>
+            &nbsp;
+            &nbsp;
+            <button class="btn btn-success" role="button" (click)='update()' >Actualizar</button>
+            &nbsp;
+            &nbsp;
+            <button  class="btn btn-success" type="button" [routerLink]="['/usuarios/']">Regresar</button>
+        </form>
+    </div>
+</div>
+
+
+
